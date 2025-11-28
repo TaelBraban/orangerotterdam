@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Rotterdam</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            background-color: white;
+        }
+        .text-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 180px;
+            background-color: white;
+            z-index: 5;
+        }
+        .peel {
+            position: fixed;
+            background-color: #FF8C00;
+            border-radius: 50% 20% 40% 30%;
+            z-index: 15;
+            opacity: 0.8;
+        }
+        .peel1 {
+            top: 30px;
+            right: 50px;
+            width: 60px;
+            height: 80px;
+            transform: rotate(45deg);
+            border-radius: 50% 10% 40% 30%;
+        }
+        .peel2 {
+            top: 60px;
+            right: 130px;
+            width: 50px;
+            height: 70px;
+            transform: rotate(-20deg);
+            border-radius: 40% 15% 35% 20%;
+        }
+        .peel3 {
+            top: 90px;
+            right: 80px;
+            width: 45px;
+            height: 65px;
+            transform: rotate(60deg);
+        }
+        .peel4 {
+            top: 140px;
+            right: 120px;
+            width: 40px;
+            height: 90px;
+            transform: rotate(-15deg);
+            border-radius: 60% 5% 50% 50%;
+        }
+        .peel5 {
+            top: 125px;
+            right: 40px;
+            width: 35px;
+            height: 75px;
+            transform: rotate(80deg);
+            border-radius: 70% 30% 60% 10%;
+        }
+        .peel6 {
+            top: 150px;
+            right: 180px;
+            width: 50px;
+            height: 70px;
+            transform: rotate(-40deg);
+            border-radius: 55% 45% 65% 35%;
+        }
+
+        .orange-circle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            background-color: #FF8C00;
+            border-radius: 50%;
+            z-index: 15;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 200px;
+        }
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .image-wrapper img {
+            display: block;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 140, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .image-wrapper:hover::after {
+            opacity: 1;
+        }
+        .image-text {
+            position: fixed;
+            top: 30px;
+            left: 120px;
+            color: #FF8C00;
+            font-size: 16px;
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+            text-align: left;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 10;
+            max-width: 400px;
+        }
+        .image-wrapper:hover .image-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-area"></div>
+    <div class="orange-circle"></div>
+    <div class="peel peel1"></div>
+    <div class="peel peel2"></div>
+    <div class="peel peel3"></div>
+    <div class="peel peel4"></div>
+    <div class="peel peel5"></div>
+    <div class="peel peel6"></div>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="orange1.png" alt="Orange 1">
+            <div class="image-text">the Orange Peel Theory suggests that small acts of service, like peeling an orange for someone, can indicate the level of care and commitment in a relationship. <p>rotterdam has been very caring, peeling oranges. throwing the peels all around, but where is the fruit </p> </div>
+        </div>
+        <div class="image-wrapper">
+            <img src="orange2.png" alt="Orange 2">
+            <div class="image-text">sweet and juicy bite for those who hunt rabbits between the bunkers and the glass. storm is charging, with usb, like those who drag the noise of scooters leaving the plain, smashing bottles against the wall, firecrackers as a strength of character to aim better and bigger than the blues of cardboard trees near the Lidl in Mittelplain</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="orange 3.png" alt="Orange 3">
+            <div class="image-text">peels, like a puzzle chronicle, evoke a sweltering, electric atmosphere, a bright smile of broken insolence. the bequeathed splinter of the shops of Surinamese and former peripheries of the low country <i> the pays-bas</i>, colonized tropical countries, which pour out ripe vitamin C for the white-ass greenhorns <p> <i> pour les blancs bec un peu trop blanc du cul</i></p></div>
+        </div>
+        <div class="image-wrapper">
+            <img src="orange4.png" alt="Orange 4">
+            <div class="image-text">a fruit with a thick peel, such as a citrus fruit, is called a hesperidium. In hesperidia, the inner layer is called albedo and is peeled off together with the outer layer called flavedo. together they are called the peel.the flavedo and albedo, respectively, are the 
+                exocarp and the mesocarp. The juicy layer inside the peel, containing the seeds, is the endocarp.the greenhorns also make greenhouses that have white plastic roofs,Surface albedo is defined as the ratio of radiosity Je to the irradiance Ee</div>
+
+</body>
+        </div>
+        <div class="image-wrapper"><img src="orange6.png" alt="Orange 6"></div>
+        <div class="image-wrapper"><img src="orange7.png" alt="Orange 7"></div>
+        <div class="image-wrapper"><img src="orange8.png" alt="Orange 8"></div>
+        <div class="image-wrapper"><img src="orange9.png" alt="Orange 9"></div>
+        <div class="image-wrapper"><img src="orange10.png" alt="Orange 10"></div>
+        <div class="image-wrapper"><img src="orange11.png" alt="Orange 11"></div>
+        <div class="image-wrapper"><img src="texteorange.png" alt="Texte Orange"></div>
+    </div>
+   
+</html>
