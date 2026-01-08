@@ -238,18 +238,22 @@
         font-size: 13px;
     }
     .image-text {
-        left: 50%;
-        transform: translateX(-50%);
+        left: auto;
+        right: 5px;
+        transform: none;
         top: 120px;
-        max-width: 45vw;
-        font-size: 12px;
+        max-width: 40vw;
+        font-size: 14px;
         padding: 10px;
+        z-index: 3;
     }
     .sim-image, .macron-image {
-        right: 5px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
         top: 150px;
-        max-width: 80px;
-        z-index: 3;
+        max-width: 100px;
+        z-index: 8;
     }
     .orange-circle {
         width: 50px;
