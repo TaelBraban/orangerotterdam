@@ -162,6 +162,9 @@
         .image-wrapper:hover .image-text {
             opacity: 1;
         }
+        .image-text-narrow {
+            max-width: 650px;
+        }
         .side-banner {
             position: absolute;
             top: 0;
@@ -185,8 +188,8 @@
         .sim-image {
             position: fixed;
             top: 30px;
-            right: 270px;
-            max-width: 200px;
+            right: 300px;
+            max-width: 150px;
             max-height: 80vh;
             width: auto;
             height: auto;
@@ -195,7 +198,6 @@
             pointer-events: none;
             z-index: 20;
             object-fit: contain;
-            margin-left: 50px;
         }
         .image-wrapper:hover .sim-image {
             opacity: 1;
@@ -205,7 +207,7 @@
         .macron-image {
             position: fixed;
             top: 30px;
-            right: 350px;
+            right: 250px;
             max-width: 500px;
             max-height: 80vh;
             width: auto;
@@ -223,47 +225,65 @@
         @media (max-width: 600px) {
     body {
         padding: 5px;
+        overflow-x: hidden;
+        max-width: 100vw;
     }
     .image-container {
         flex-direction: column;
         gap: 8px;
-        margin-top: 120px;
+        margin-top: 180px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .image-wrapper {
+        margin: 10px 0;
+        width: 100%;
     }
     .image-wrapper img {
         height: 140px;
-        max-width: 100vw;
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .text-area {
-        height: 120px;
+        height: 180px;
         font-size: 13px;
+        width: 100vw;
     }
     .image-text {
-        left: auto;
-        right: 5px;
+        left: 10px;
+        right: auto;
         transform: none;
-        top: 120px;
-        max-width: 40vw;
-        font-size: 14px;
-        padding: 10px;
+        top: 190px;
+        max-width: calc(100vw - 220px);
+        font-size: 11px;
+        padding: 8px;
         z-index: 3;
     }
     .sim-image, .macron-image {
         left: 50%;
         right: auto;
         transform: translateX(-50%);
-        top: 150px;
-        max-width: 100px;
+        top: 190px;
+        max-width: 80px;
         z-index: 8;
     }
     .orange-circle {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         top: 10px;
         left: 10px;
     }
     .peel {
-        opacity: 0.7;
+        opacity: 0.6;
         z-index: 15;
+    }
+    .peel1, .peel2, .peel3, .peel4, .peel5, .peel6 {
+        transform: scale(0.6);
+    }
+    svg {
+        width: 150px;
+        height: 120px;
     }
 }
     </style>
@@ -380,7 +400,7 @@
 
                 <div class="image-wrapper">
                     <img src="orange31.png" alt="Orange 31">
-                    <div class="image-text">   sudden souvenir of <i> " Replace Macron with small clementine peels </i>"  <p> 
+                    <div class="image-text image-text-narrow">   sudden souvenir of <i> " Replace Macron with small clementine peels </i>"  <p> 
                  
                  those posters "replace [politics] with [something calmer]" were called The Great Relief and appeared <br> in April 2021 on the walls of different cities in France. 
                  by Quentin Faucompré and Cyril Pedrosa. <br> It played on our weariness of seeing campaign posters for the elections. we were all tired.<br> <p> political relaxation program with
@@ -452,7 +472,7 @@
      
                 <div class="image-wrapper">
                     <img src="orange16.png" alt="Orange 16">
-                    <div class="image-text">minute maid orange, columns and triangular pedimented porch white houses, posh leached neighborhood in New-Orleans, harvesting oranges
+                    <div class="image-text image-text-narrow">minute maid orange, columns and triangular pedimented porch white houses, posh leached neighborhood in New-Orleans, harvesting oranges
                         and lemon in this high society lady's magnolia garden with my little brother, my radiant mother playing along this role of elegant and 
                         distinguished southern belle, those where my mother's domestic tale days, us, sprayed blond hair. <p> my parents always used the phone and wifi app called Orange.fr,
                         square orange, white texte, orange on darken orange window flavicon, roundabout for playing online with their emailadress, now distant from Orange.fr, to the red blood of Telecom SFR, vibrant orange is found in Soundcloud, VLC, Blender, Arte.tv, LaCroix newspaper site.</p>
@@ -531,7 +551,7 @@
             </div>   
             
             
-            en
+        
             <!--               
                     walking in Rotterdam 
              -->
